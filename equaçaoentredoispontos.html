@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/equacaodoispontos.css">
+
+<body>
+    <nav>
+        <a href="index.html">Classica</a>
+        <a href="equaçaoentredoispontos.html" class="selecionada">Equações Dois Pontos</a>
+        <a href="distanciaentreponto.html">Distancia entre Ponto e Reta</a>
+        <a href="equaçaoreduzida.html">Equação Reduzida</a>
+        <a href="posiçaorelativareta.html">Posição Relativa das Retas</a>
+    </nav>
+
+    <div class="Calculadora">
+        <input type="text" disabled class="display" id="display">
+
+
+        <div class="pontos">
+            <label>Ponto A</label>
+            <div><span>X:</span><input type="number" name="" class="ponto" id="xA"></div>
+            <div><span>Y:</span><input type="number" name="" class="ponto" id="yA"></div>
+        </div>
+        <div class="pontos">
+            <label>Ponto B</label>
+            <div><span>X:</span><input type="number" name="" class="ponto" id="xB"></div>
+            <div><span>Y:</span><input type="number" name="" class="ponto" id="yB"></div>
+        </div>
+
+
+        <div class="primeira-linha">
+            <button onclick="limpar()">LIMPAR</button>
+        </div>
+
+        <div class="botoes-calculo">
+            <button onclick="Calculardistancia()">Distância</button>
+            <button onclick="CalcularPontomedio()">Ponto Médio</button>
+            <button onclick="CalcularEquacaoreta()">Equação da Reta</button>
+            <button onclick="CalcularCoeficiente()">Coêficiente</button>
+        </div>
+
+        <script src="JavaScript/equacaodoispontos.js"></script>
+</body>
+
+</html>

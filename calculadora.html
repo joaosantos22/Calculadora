@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Distância / Ponto Médio Entre Dois Pontos</legend>
+        Ponto A (<input type="number" id="pax">, <input type="number" id="pay" />)<br>
+        Ponto B (<input type="number" id="pbx">, <input type="number" id="pby" />)<br>
+        Resultado: <strong id="resultado"></strong><br>
+        <button onclick="distanciaEntreDoisPontos()">CALCULAR DISTÂNCIA</button>
+        <button onclick="pontoMedioEntreDoisPontos()">CALCULAR PONTO MÉDIO</button>
+        <button onclick="equacaoDaReta()">CALCULAR EQUAÇÃO RETA</button>
+        <button onclick="coeficienteAngular()">CALCULAR COEFIENTE ANGULAR</button>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Distância de Ponto e Reta</legend>
+        Ponto A: (<input type="number" id="pax2">, <input type="number" id="pay2" />)<br>
+        Equação de Reta:
+        A = <input type="number" id="a">,
+        B = <input type="number" id="b" />
+        C = <input type="number" id="c" /> = 0<br>
+        Resultado: <strong id="resultado2"></strong><br>
+        <button onclick="distanciaPontoEReta()">CALCULAR</button>
+    </fieldset><br><br>
+
+    <fieldset>
+        <legend>Equação Reduzida</legend>
+        Coeficiente Angular = <input type="number" id="m"><br>
+        Ponto A: (<input type="number" id="pax3">, <input type="number" id="pay3" />)<br>
+        Resultado: <strong id="resultado3"></strong><br>
+        <button onclick="equacaoReduzida()">CALCULAR</button>
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>Posição Relativa das Retas</legend>
+        1º Reta: (M = <input type="number" id="mRetaUm">, N = <input type="number" id="nRetaUm" />)<br>
+        2º Reta: (M = <input type="number" id="mRetaDois">, N = <input type="number" id="nRetaDois" />)<br>
+        Resultado: <strong id="resultado4"></strong><br>
+        <button onclick="posicaoRelativaDuasRetas()">VERIFICAR</button>
+    </fieldset>
+
+    <script src="calculadora.html"></script>
+</body>
+
+</html>

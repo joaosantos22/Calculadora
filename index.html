@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body onkeypress="ClicouTecla(event)">
+    <nav>
+        <a href="index.html" class="selecionada">Classica</a>
+        <a href="equaçaoentredoispontos.html">Equações Dois Pontos</a>
+        <a href="distanciaentreponto.html">Distancia entre Ponto e Reta</a>
+        <a href="equaçaoreduzida.html">Equação Reduzida</a>
+        <a href="posiçaorelativareta.html">Posição Relativa das Retas</a>
+    </nav>
+    
+    <div class="Calculadora">
+        <input type="text" disabled class="display" id="display">
+        <div class="primeiros-botoes" >
+            <button onclick="limpar()">LIMPAR</button>
+            <button onclick="backspace()"><<</button>
+            <button onclick="SelecionarOperacao('/')">/</button>
+        </div>
+        <div class="botoes-centrais">
+            <button onclick="InserirNumero('7')">7</button>
+            <button onclick="InserirNumero('8')">8</button>
+            <button onclick="InserirNumero('9')">9</button>
+            <button onclick="SelecionarOperacao('*')">*</button>
+            <button onclick="InserirNumero('4')">4</button>
+            <button onclick="InserirNumero('5')">5</button>
+            <button onclick="InserirNumero('6')">6</button>
+            <button onclick="SelecionarOperacao('-')">-</button>
+            <button onclick="InserirNumero('1')">1</button>
+            <button onclick="InserirNumero('2')">2</button>
+            <button onclick="InserirNumero('3')">3</button>
+            <button onclick="SelecionarOperacao('+')">+</button>
+        </div>
+        <div class="ultimos-botoes">
+            <button onclick="InserirNumero('0')">0</button>
+            <button onclick="inserirdecimal()">.</button>
+            <button onclick="chamarigual()">=</button>
+        </div> 
+    </div>
+
+    <script src="JavaScript/classica.js"></script>
+</body>
+</html>
