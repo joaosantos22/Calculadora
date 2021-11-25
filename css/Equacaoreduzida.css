@@ -5,7 +5,7 @@
     margin-bottom: 10px;
 }
 
-.pontos div, label{
+.pontos div, .pontos1 div, label{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,7 +36,7 @@
 .primeira-linha{
     display: grid;
     grid-template-columns: 1fr;
-    
+    margin-top: 7px;
 }
 
 .botoes-calculo{
@@ -49,4 +49,5 @@
 .segunda-linha{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 7px;
 }

@@ -4,8 +4,14 @@
     grid-gap: 20px;
     margin-bottom: 10px;
 }
+.pontos1{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 0px;
+}
 
-.pontos div, label{
+.pontos div, .pontos1 div, label{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,6 +42,7 @@
 .primeira-linha{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 5px;
     
 }
 
@@ -49,4 +56,5 @@
 .segunda-linha{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 7px;
 }

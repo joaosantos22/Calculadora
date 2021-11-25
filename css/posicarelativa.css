@@ -49,4 +49,5 @@
 .segunda-linha{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 7px;
 }

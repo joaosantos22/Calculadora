@@ -7,6 +7,7 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/Equacaoreduzida.css">
 </head>
 <body>
     <nav>
@@ -16,8 +17,34 @@
         <a href="equaçaoreduzida.html" class="selecionada">Equação Reduzida</a>
         <a href="posiçaorelativareta.html">Posição Relativa das Retas</a>
     </nav>
+    <div class="Calculadora">
+        <input type="text" disabled class="display" id="display">
     
-    <h1>Equação Reduzida</h1>
-    
+    <div class="pontos">
+        <label>Ponto A</label>
+        <div><span>X:</span><input type="number" name="" class="ponto" id="X"></div>
+        <div><span>Y:</span><input type="number" name="" class="ponto" id="Y"></div>
+    </div>
+    <div class="pontos1">
+        
+        <div><span>Coeficiente Angular:</span><input type="number" name="" class="ponto" id="A"></div>
+    </div>
+    <div class="primeira-linha">
+        <button onclick="limpar()">LIMPAR</button>
+    </div>
+
+    <div class="segunda-linha">
+        <button onclick="EquacaoR()">Equação Reduzida</button>
+    </div>
+    <script src="JavaScript/Reduzida.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- <label>Equação A:</label> -->

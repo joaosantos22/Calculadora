@@ -7,6 +7,7 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/distanciaentrepontoereta.css">
 </head>
 <body>
     <nav>
@@ -16,8 +17,30 @@
         <a href="equaçaoreduzida.html">Equação Reduzida</a>
         <a href="posiçaorelativareta.html">Posição Relativa das Retas</a>
     </nav>
-    
-    <h1>Distancia Entre Pontos e Retas</h1>
-    
+    <div class="Calculadora">
+        <input type="text" disabled class="display" id="display">
+
+
+        <div class="pontos">
+            <label>Ponto A</label>
+            <div><span>X:</span><input type="number" name="" class="ponto" id="X"></div>
+            <div><span>Y:</span><input type="number" name="" class="ponto" id="Y"></div>
+        </div>
+        <div class="pontos1">
+            <label>Equação A:</label>
+            <div><span>A:</span><input type="number" name="" class="ponto" id="A"></div>
+            <div><span>B:</span><input type="number" name="" class="ponto" id="B"></div>
+            <div><span>C:</span><input type="number" name="" class="ponto" id="C"></div>
+        </div>
+        <div class="primeira-linha">
+            <button onclick="limpar()">LIMPAR</button>
+        </div>
+
+        <div class="segunda-linha">
+            <button onclick="DistanciaPR()">Distancia De Pontos E Reta</button>
+        </div>
+
+
+    <script src="JavaScript/DistanciaPR.js"></script>
 </body>
 </html>
